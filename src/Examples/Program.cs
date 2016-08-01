@@ -7,6 +7,8 @@ namespace ConsoleApplication
         public static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+
+            //Examples.Visitor.VisitorDemo.Run();
         }
     }
 }
