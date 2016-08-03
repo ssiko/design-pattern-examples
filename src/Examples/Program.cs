@@ -10,6 +10,8 @@ namespace Examples
 
             //Behavioral.Visitor.VisitorDemo.Run();
             //Behavioral.TemplateMethod.TemplateMethodDemo.Run();
+
+            //Structural.Bridge.BridgeDemo.Run();
         }
     }
 }
