@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ConsoleApplication
+namespace Examples
 {
     public class Program
     {
@@ -8,8 +8,8 @@ namespace ConsoleApplication
         {
             Console.WriteLine("Hello World!");
 
-            //Examples.Visitor.VisitorDemo.Run();
-            //Examples.TemplateMethod.TemplateMethodDemo.Run();
+            //Behavioral.Visitor.VisitorDemo.Run();
+            //Behavioral.TemplateMethod.TemplateMethodDemo.Run();
         }
     }
 }

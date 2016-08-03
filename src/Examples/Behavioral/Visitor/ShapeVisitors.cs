@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Examples.Visitor
+namespace Examples.Behavioral.Visitor
 {
     public interface IShapeVisitor
     {
