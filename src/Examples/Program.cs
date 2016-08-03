@@ -9,6 +9,7 @@ namespace ConsoleApplication
             Console.WriteLine("Hello World!");
 
             //Examples.Visitor.VisitorDemo.Run();
+            Examples.TemplateMethod.TemplateMethodDemo.Run();
         }
     }
 }
