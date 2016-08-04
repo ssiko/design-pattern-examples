@@ -12,6 +12,8 @@ namespace Examples
             //Behavioral.TemplateMethod.TemplateMethodDemo.Run();
 
             //Structural.Bridge.BridgeDemo.Run();
+
+            //Creational.Builder.BuilderDemo.Run();
         }
     }
 }
