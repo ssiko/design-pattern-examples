@@ -16,7 +16,7 @@ namespace Examples.Creational.Builder
         ShapeBoard GetShapeBoard();
     }
 
-    public class RandomzingShapeBuilder : IShapeBoardBuilder
+    public class RandomizingShapeBuilder : IShapeBoardBuilder
     {
         private readonly ShapeBoard _shapeBoard = new ShapeBoard();
 
@@ -47,7 +47,7 @@ namespace Examples.Creational.Builder
 
         public static IShapeBoardBuilder Create(string name, int size)
         {
-            RandomzingShapeBuilder builder = new RandomzingShapeBuilder();
+            RandomizingShapeBuilder builder = new RandomizingShapeBuilder();
             builder.SetName(name);
 
             Random randomizer = new Random(100);
