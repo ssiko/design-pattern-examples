@@ -1,4 +1,4 @@
-# Examples of Design Patterns in C#
+# Examples of Design Patterns in C&#35;
 
 ## Purpose
 This repository is to provide examples of the commonly-understood Gang of Four (GoF) design patterns.
