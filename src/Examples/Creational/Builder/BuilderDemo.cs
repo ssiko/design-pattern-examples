@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 
 namespace Examples.Creational.Builder
 {
-    public static class BuilderDemo
+    public class BuilderDemo : DemoBase
     {
-        public static void Run()
+        public override void Run()
         {
             Console.WriteLine("Create the 'Randomizing Demo Board'...");
 
@@ -20,9 +20,7 @@ namespace Examples.Creational.Builder
             {
                 Console.WriteLine($"\tViewing shape: {shape.Name}");
             }
-
-            Console.WriteLine("\n\nPress <ENTER> key to continue...");
-            Console.ReadLine();
+            WaitForUser();
         }
     }
 }

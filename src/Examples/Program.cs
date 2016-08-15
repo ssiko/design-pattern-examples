@@ -8,12 +8,11 @@ namespace Examples
         {
             Console.WriteLine("Hello World!");
 
-            //Behavioral.Visitor.VisitorDemo.Run();
-            //Behavioral.TemplateMethod.TemplateMethodDemo.Run();
-
-            //Structural.Bridge.BridgeDemo.Run();
-
-            //Creational.Builder.BuilderDemo.Run();
+            //new Behavioral.Visitor.VisitorDemo().Run();
+            //new Behavioral.TemplateMethod.TemplateMethodDemo().Run();
+            //new Structural.Bridge.BridgeDemo().Run();
+            //new Creational.Builder.BuilderDemo().Run();
+            //new Behavioral.Strategy.StrategyDemo().Run();
         }
     }
 }

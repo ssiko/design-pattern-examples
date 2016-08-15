@@ -5,16 +5,15 @@ using System.Threading.Tasks;
 
 namespace Examples.Structural.Bridge
 {
-    public static class BridgeDemo
+    public  class BridgeDemo : DemoBase
     {
-        public static void Run()
+        public override void Run()
         {
             SongPlayer player = new SongPlayer { Name = "Pandora" };
             player.PlayList = new JamesPlayList();
             player.Play();
 
-            Console.WriteLine("\n\nPress <ENTER> key to continue...");
-            Console.ReadLine();
+            WaitForUser();
         }
     }
 }

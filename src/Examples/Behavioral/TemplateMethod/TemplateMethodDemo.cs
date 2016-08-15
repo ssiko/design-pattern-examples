@@ -5,15 +5,14 @@ using System.Threading.Tasks;
 
 namespace Examples.Behavioral.TemplateMethod
 {
-    public static class TemplateMethodDemo
+    public class TemplateMethodDemo : DemoBase
     {
-        public static void Run()
+        public override void Run()
         {
             PersonProcessor processor = new GitHubContributingPersonProcessor();
             processor.Process();
 
-            Console.WriteLine("\n\nPress <ENTER> key to continue...");
-            Console.ReadLine();
+            WaitForUser();
         }
     }
 }

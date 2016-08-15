@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 
 namespace Examples.Behavioral.Visitor
 {
-    public static class VisitorDemo
+    public class VisitorDemo : DemoBase
     {
-        public static void Run()
+        public override void Run()
         {
             Console.WriteLine("Create the 'Simple Demo Board'...");
             ShapeBoard board = new Visitor.ShapeBoard { Name = "Simple Demo Board" };
@@ -22,8 +22,7 @@ namespace Examples.Behavioral.Visitor
             Console.WriteLine("Summarizing 'Simple Demo Board' analysis...");
             Console.WriteLine(visitor.SummarizeCounts());
 
-            Console.WriteLine("\n\nPress <ENTER> key to continue...");
-            Console.ReadLine();
+            WaitForUser();
         }
     }
 }
