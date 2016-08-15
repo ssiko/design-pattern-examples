@@ -12,8 +12,6 @@ namespace Examples.Structural.Bridge
             SongPlayer player = new SongPlayer { Name = "Pandora" };
             player.PlayList = new JamesPlayList();
             player.Play();
-
-            WaitForUser();
         }
     }
 }

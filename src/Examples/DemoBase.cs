@@ -9,15 +9,17 @@ namespace Examples
     {
         protected abstract void DoRun();
 
-        public void Run()
+        public bool Run()
         {
             DoRun();
+            return WaitForUser();
         }
 
-        public void WaitForUser()
+        public bool WaitForUser()
         {
-            Console.WriteLine("\n\nPress <ENTER> key to continue...");
-            Console.ReadLine();
+            Console.Write("\n\nDemo Complete...Run another? (y/n)");
+            string result = Console.ReadLine().ToLower();
+            return result == "y";
         }
     }
 }

@@ -9,16 +9,10 @@ namespace Examples.Behavioral.Strategy
     {
         protected override void DoRun()
         {
-            PrimeTool tool = new PrimeTool(new SieveOfEratosthenesPrimeStrategy(100));
-            
-            TestPrimes(tool);
-
-
+            PrimeTool tool = new PrimeTool(new SieveOfEratosthenesPrimeStrategy(100));            
+            TestPrimes(tool);       
             tool.Strategy = new BruteForcePrimeStrategy();
             TestPrimes(tool);
-
-
-            WaitForUser();
         }
 
         private void TestPrimes(PrimeTool tool)

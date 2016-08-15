@@ -20,7 +20,6 @@ namespace Examples.Creational.Builder
             {
                 Console.WriteLine($"\tViewing shape: {shape.Name}");
             }
-            WaitForUser();
         }
     }
 }

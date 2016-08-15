@@ -21,8 +21,6 @@ namespace Examples.Behavioral.Visitor
 
             Console.WriteLine("Summarizing 'Simple Demo Board' analysis...");
             Console.WriteLine(visitor.SummarizeCounts());
-
-            WaitForUser();
         }
     }
 }

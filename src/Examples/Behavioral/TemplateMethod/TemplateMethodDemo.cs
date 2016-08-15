@@ -11,8 +11,6 @@ namespace Examples.Behavioral.TemplateMethod
         {
             PersonProcessor processor = new GitHubContributingPersonProcessor();
             processor.Process();
-
-            WaitForUser();
         }
     }
 }
