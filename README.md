@@ -24,7 +24,7 @@ We will be adding to this repository as we work through different design pattern
 | --- | --- | --- |
 | Chain of Responsibility | A way of passing a request between a chain of objects | [Planned](https://github.com/ssiko/design-pattern-examples/issues/8) |
 | State| Alter an object's behavior when its state changes | [Planned](https://github.com/ssiko/design-pattern-examples/issues/9) |
-| Strategy | Encapsulates an algorithm inside a class | [Planned](https://github.com/ssiko/design-pattern-examples/issues/10) |
+| Strategy | Encapsulates an algorithm inside a class | Completed |
 | Template Method | Defer the exact steps of an algorithm to a subclass | Completed |
 | Visitor | Defines a new operation to a class without change | Completed |
 
