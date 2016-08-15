@@ -9,8 +9,7 @@ namespace Examples.Structural.Bridge
     {
         protected override void DoRun()
         {
-            SongPlayer player = new SongPlayer { Name = "Pandora" };
-            player.PlayList = new JamesPlayList();
+            SongPlayer player = new PandoraSongPlayer();
             player.Play();
         }
     }
