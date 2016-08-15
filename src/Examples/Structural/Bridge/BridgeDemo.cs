@@ -7,7 +7,7 @@ namespace Examples.Structural.Bridge
 {
     public  class BridgeDemo : DemoBase
     {
-        public override void Run()
+        protected override void DoRun()
         {
             SongPlayer player = new SongPlayer { Name = "Pandora" };
             player.PlayList = new JamesPlayList();

@@ -7,7 +7,12 @@ namespace Examples
 {
     public abstract class DemoBase
     {
-        public abstract void Run();
+        protected abstract void DoRun();
+
+        public void Run()
+        {
+            DoRun();
+        }
 
         public void WaitForUser()
         {

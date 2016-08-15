@@ -7,7 +7,7 @@ namespace Examples.Creational.Builder
 {
     public class BuilderDemo : DemoBase
     {
-        public override void Run()
+        protected override void DoRun()
         {
             Console.WriteLine("Create the 'Randomizing Demo Board'...");
 

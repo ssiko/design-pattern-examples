@@ -7,7 +7,7 @@ namespace Examples.Behavioral.TemplateMethod
 {
     public class TemplateMethodDemo : DemoBase
     {
-        public override void Run()
+        protected override void DoRun()
         {
             PersonProcessor processor = new GitHubContributingPersonProcessor();
             processor.Process();

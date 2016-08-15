@@ -7,7 +7,7 @@ namespace Examples.Behavioral.Visitor
 {
     public class VisitorDemo : DemoBase
     {
-        public override void Run()
+        protected override void DoRun()
         {
             Console.WriteLine("Create the 'Simple Demo Board'...");
             ShapeBoard board = new Visitor.ShapeBoard { Name = "Simple Demo Board" };

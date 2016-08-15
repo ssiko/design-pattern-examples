@@ -42,12 +42,12 @@ namespace Examples.Behavioral.TemplateMethod
 
         protected override IEnumerable<Person> GetPersons()
         {
-            yield return new TemplateMethod.Person { Name = "James", Title = "Architect" };
-            yield return new TemplateMethod.Person { Name = "Hiro", Title = "Senior Developer" };
-            yield return new TemplateMethod.Person { Name = "Stan", Title = "Senior Developer" };
-            yield return new TemplateMethod.Person { Name = "Steve", Title = "Senior Developer" };
-            yield return new TemplateMethod.Person { Name = "Chris", Title = "Senior Developer" };
-            yield return new TemplateMethod.Person { Name = "Purvin", Title = "Senior Developer" };
+            yield return new Person { Name = "James", Title = "Architect" };
+            yield return new Person { Name = "Hiro", Title = "Senior Developer" };
+            yield return new Person { Name = "Stan", Title = "Senior Developer" };
+            yield return new Person { Name = "Steve", Title = "Senior Developer" };
+            yield return new Person { Name = "Chris", Title = "Senior Developer" };
+            yield return new Person { Name = "Purvin", Title = "Senior Developer" };
         }
 
         protected override bool PersonMeetsCriteria(Person person)

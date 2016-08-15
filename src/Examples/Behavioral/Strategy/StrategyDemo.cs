@@ -7,7 +7,7 @@ namespace Examples.Behavioral.Strategy
 {
     public class StrategyDemo : DemoBase
     {
-        public override void Run()
+        protected override void DoRun()
         {
             PrimeTool tool = new PrimeTool(new SieveOfEratosthenesPrimeStrategy(100));
             
