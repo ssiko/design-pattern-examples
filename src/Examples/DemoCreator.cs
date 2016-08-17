@@ -18,7 +18,7 @@ namespace Examples
                 Console.Write("Type not found please enter another type: ");
                 return Create(Console.ReadLine());
             }
-            return (DemoBase)Activator.CreateInstance(t1 != null ? t1 : t2 != null ? t2 : t3 != null ? t3 : null);
+            return (DemoBase)Activator.CreateInstance(t1 ?? t2 ?? t3);
         }
     }
 }
