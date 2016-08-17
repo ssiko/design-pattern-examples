@@ -1,20 +1,24 @@
 ﻿using System;
-
+using System.Linq;
+using Examples.Creational.Factory;
 namespace Examples
 {
     public class Program
     {
+        static DemoCreator demoCreator = null;
+
         public static void Main(string[] args)
         {
-            Execute();
-        }
+            if (args.Contains("reflection"))
+                demoCreator = new ReflectionDemoCreator();
+            else
+                demoCreator = new NumericDemoCreator();
 
-        public static void Execute()
-        {
-            Console.Write("Type the name of the pattern demo you want to run (i.e. Strategy, TemplateMethod, etc): ");
-            DemoBase demo = new DemoCreator().Create(Console.ReadLine());
+            demoCreator.PrintDemoes();
+            Console.Write("Please enter the pattern you wish to run: ");
+            DemoBase demo = demoCreator.Create(Console.ReadLine());
             if (demo.Run())
-                Execute();
+                Main(args);
         }
     }
 }
