@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Examples.Behavioral.Visitor
 {
@@ -29,7 +27,7 @@ namespace Examples.Behavioral.Visitor
 
         public void RunBoard(IShapeVisitor visitor)
         {
-            foreach(Shape shape in Shapes)
+            foreach (Shape shape in Shapes)
             {
                 shape.Accept(visitor);
             }

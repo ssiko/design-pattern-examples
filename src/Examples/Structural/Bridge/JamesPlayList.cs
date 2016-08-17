@@ -1,17 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace Examples.Structural.Bridge
 {
-    public interface IPlayList
-    {
-        string Title { get; }
-
-        IEnumerable<Song> GetSongs();
-    }
-
     public class JamesPlayList : IPlayList
     {
         public string Title { get; } = "Today's Rap and R&B Hits";
