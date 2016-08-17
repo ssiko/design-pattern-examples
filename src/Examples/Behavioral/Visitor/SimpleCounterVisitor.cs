@@ -1,17 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace Examples.Behavioral.Visitor
+﻿namespace Examples.Behavioral.Visitor
 {
-    public interface IShapeVisitor
-    {
-        void Visit(Circle circle);
-        void Visit(Square square);
-        void Visit(Triangle triangle);
-    }
-
     public class SimpleCounterVisitor : IShapeVisitor
     {
         public int CircleCount { get; private set; }
