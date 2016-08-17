@@ -10,7 +10,7 @@ We will be adding to this repository as we work through different design pattern
 | Name | Description | Status |
 | --- | --- | --- |
 | Builder | Separates object construction from its representation | Completed |
-| Factory Method | Creates an instance of several derived classes | [Planned](https://github.com/ssiko/design-pattern-examples/issues/5) |
+| Factory Method | Creates an instance of several derived classes | Completed |
   
 ### Structural Patterns
 | Name | Description | Status |
