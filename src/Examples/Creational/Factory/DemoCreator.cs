@@ -16,7 +16,8 @@ namespace Examples.Creational.Factory
             new Behavioral.Strategy.StrategyDemo(),
             new Behavioral.TemplateMethod.TemplateMethodDemo(),
             new Behavioral.Visitor.VisitorDemo(),
-            new Structural.Bridge.BridgeDemo()
+            new Structural.Bridge.BridgeDemo(),
+            new Structural.Adapter.AdapterDemo()
         };
 
         public abstract void PrintDemoes();
