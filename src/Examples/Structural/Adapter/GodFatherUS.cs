@@ -5,15 +5,16 @@ using System.Threading.Tasks;
 
 namespace Examples.Structural.Adapter
 {
-    public class GodfatherBR: BluRayDisc
+    public class GodfatherUS : BluRayDiscUS
     {
-        public GodfatherBR() : base("The Godfather - BluRay", new GodfatherContents())
+        public GodfatherUS() : base("The Godfather - BluRay", new GodfatherContents())
         {
         }
 
         public override void Play()
         {
-            Console.WriteLine($"Playing a Blu-ray Disc:\n\n{Name}\n\n");
+            Console.WriteLine($"Playing a Blu-ray Disc:\n\n{Name}\n");
+            Console.WriteLine("$$$ US Edition $$$\n\n");
 
             foreach (Item item in PlayList.GetItems() ?? Enumerable.Empty<Item>())
             {

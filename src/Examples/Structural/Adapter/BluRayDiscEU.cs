@@ -5,10 +5,12 @@ using System.Threading.Tasks;
 
 namespace Examples.Structural.Adapter
 {
-    public abstract class BluRayDisc : Disc
+    public abstract class BluRayDiscEU : Disc
     {
-        public BluRayDisc(string name, IPlayList playList) : base("Blu-ray", name, playList)
+        public BluRayDiscEU(string name, IPlayList playList) : base(name, playList)
         {
         }
+
+        public abstract void Start();
     }
 }

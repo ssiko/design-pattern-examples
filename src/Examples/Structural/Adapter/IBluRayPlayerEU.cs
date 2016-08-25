@@ -5,9 +5,8 @@ using System.Threading.Tasks;
 
 namespace Examples.Structural.Adapter
 {
-    interface IBluRayPlayer
+    interface IBluRayPlayerEU
     {
-        void InsertDisc(Disc insertedDisc);
-        void EjectDisc();
+        void Start();
     }
 }
